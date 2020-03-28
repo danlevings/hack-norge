@@ -47,7 +47,7 @@ const ScheduleCard = styled.div`
 const Home = () => {
   return (
     <Wrapper>
-      <Card to="/child/add">
+      <Card to="/child/list">
         78 <br />
         Children <br />
       </Card>
@@ -55,7 +55,7 @@ const Home = () => {
         3 <br />
         Groups <br />
       </Card>
-      <Card to="/child/add">
+      <Card to="/teacher/list">
         5 <br />
         Teachers <br />
       </Card>
