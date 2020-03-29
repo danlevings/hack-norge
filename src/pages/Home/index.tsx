@@ -73,28 +73,28 @@ const Home = () => {
           Children
           <br />
         </Title>
-        <img src="/icons/kids.svg" />
+        <img src="/icons/kids.svg" alt="Children" />
       </Card>
       <Card to="/group/add">
         <Title>
           3 <br />
           Groups <br />
         </Title>
-        <img src="/icons/groups.svg" />
+        <img src="/icons/groups.svg" alt="Groups" />
       </Card>
       <Card to="/teacher/list">
         <Title>
           5 <br />
           Teachers <br />
         </Title>
-        <img src="/icons/teach.svg" />
+        <img src="/icons/teach.svg" alt="Teacher" />
       </Card>
       <Card to="/activity/add">
         <Title>
           5 <br />
           Activities <br />
         </Title>
-        <img src="/icons/man.svg" />
+        <img src="/icons/man.svg" alt="Pac-man" />
       </Card>
 
       <ScheduleCard>
