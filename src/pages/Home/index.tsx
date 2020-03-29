@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import ButtonLink from "../../components/ButtonLink";
 
 const Wrapper = styled.div`
@@ -24,6 +24,7 @@ const Card = styled(Link)`
   text-decoration: none;
   font-size: 21px;
   color: black;
+  flex-direction: column;
 `;
 
 const ScheduleCard = styled.div`
@@ -41,27 +42,59 @@ const ScheduleCard = styled.div`
   .row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
   }
+  .header {
+    margin-bottom: 16px;
+  }
+`;
+
+const Title = styled.div`
+  font-weight: 900;
+  font-style: normal;
+  font-family: Avenir;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 20px;
+`;
+
+const Text = styled.div`
+  font-family: "Avenir";
+  font-size: 20px;
 `;
 
 const Home = () => {
   return (
     <Wrapper>
       <Card to="/child/list">
-        78 <br />
-        Children <br />
+        <Title>
+          78 <br />
+          Children
+          <br />
+        </Title>
+        <img src="/icons/kids.svg" alt="Children" />
       </Card>
       <Card to="/group/add">
-        3 <br />
-        Groups <br />
+        <Title>
+          3 <br />
+          Groups <br />
+        </Title>
+        <img src="/icons/groups.svg" alt="Groups" />
       </Card>
       <Card to="/teacher/list">
-        5 <br />
-        Teachers <br />
+        <Title>
+          5 <br />
+          Teachers <br />
+        </Title>
+        <img src="/icons/teach.svg" alt="Teacher" />
       </Card>
       <Card to="/activity/add">
-        5 <br />
-        Activities <br />
+        <Title>
+          5 <br />
+          Activities <br />
+        </Title>
+        <img src="/icons/man.svg" alt="Pac-man" />
       </Card>
 
       <ScheduleCard>
@@ -70,22 +103,22 @@ const Home = () => {
           <ButtonLink to="/schedule-call">Schedule call</ButtonLink>
         </div>
         <div className="row">
-          <div>8:30</div>
-          <div>Stellar</div>
-          <div>Drawing session</div>
-          <ButtonLink to="/call">Join call</ButtonLink>
+          <Text>8:30</Text>
+          <Text>Stellar</Text>
+          <Text>Drawing session</Text>
+          <ButtonLink to="/call">Call</ButtonLink>
         </div>
         <div className="row">
-          <div>8:30</div>
-          <div>Stellar</div>
-          <div>Drawing session</div>
-          <ButtonLink to="/call">Join call</ButtonLink>
+          <Text>8:30</Text>
+          <Text>Stellar</Text>
+          <Text>Drawing session</Text>
+          <ButtonLink to="/call">Call</ButtonLink>
         </div>
         <div className="row">
-          <div>8:30</div>
-          <div>Stellar</div>
-          <div>Drawing session</div>
-          <ButtonLink to="/call">Join call</ButtonLink>
+          <Text>8:30</Text>
+          <Text>Stellar</Text>
+          <Text>Drawing session</Text>
+          <ButtonLink to="/call">Call</ButtonLink>
         </div>
       </ScheduleCard>
     </Wrapper>
